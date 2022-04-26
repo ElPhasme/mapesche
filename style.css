@@ -1,0 +1,201 @@
+
+
+@font-face {
+    font-family: 'gotham_lightregular';
+    src: url('fonts/gotham-light-webfont.woff2') format('woff2'),
+         url('fonts/gotham-light-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: url('fonts/Gotham-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Gotham-Medium';
+    src: url('fonts/gotham-medium-webfont.woff2') format('woff2'),
+         url('fonts/gotham-medium-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?vqztg1');
+  src:  url('../fonts/icomoon.eot?vqztg1#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?vqztg1') format('truetype'),
+    url('../fonts/icomoon.woff?vqztg1') format('woff'),
+    url('../fonts/icomoon.svg?vqztg1#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+
+
+body {
+	background-color: #010101;
+	font-family: 'gotham_lightregular','Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+h1 {
+	font-family: 'gotham_lightregular','Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+	font-family: 'gotham_lightregular','Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: white;
+    font-size: 1.1em;
+}
+
+p {
+	font-family: 'gotham_lightregular','Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: white;
+    line-height: 1.6;
+}
+
+a {
+    color: white;
+    text-decoration: none; 
+    transition: all .3s ease-out;   
+}
+
+a:hover {
+    color: hotpink;
+}
+
+nav {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+nav li {
+	padding-right: 1em;
+}
+
+nav a {
+	font-family:'Gotham-Medium', 'Open Sans', sans-serif;
+	font-size: 1em;
+}
+
+.contact {
+	color: #ff0381;
+}
+
+.voix {
+	color: #ff0381;
+}
+
+.studio {
+	color: #ff0381;
+}
+
+.img_accueil {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+}
+
+.logo_accueil {
+	width: 35%;
+}
+
+
+.section_centre {
+ 	margin: auto;
+ 	width: 50%;
+ 	padding-top: 120px;
+  	display: flex;
+  	flex-direction: column;
+  	padding-bottom: 70px;
+  }
+
+
+.section_centre .neon {
+    font-family: 'gotham_lightregular', cursive;
+    font-size:28px;
+    color: hotpink;
+    font-weight: 400;
+    letter-spacing: 8px;
+    text-shadow: 1px 0px 4px hotpink, 2px 0px 4px hotpink, 3px 0px 4px hotpink, 2px 0px 3px #D42CCA, 2px 3px 15px #D42CCA, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA,40px 0vw 200px #D42CCA;
+  }
+  
+  .flicker-slow{
+    animation: flicker 3s linear infinite;
+  }
+  
+  .flicker-fast{
+    animation: flicker 1s linear infinite;
+  }
+
+  @keyframes flicker {
+      0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+      opacity: .99;
+      }
+  
+      20%, 21.999%, 63%, 63.999%, 65%, 69.999% {  
+          opacity: 0.4;
+      }
+  }
+
+.section_centre .logo_central {
+	width: 30vh;
+}
+
+.section_centre .photo_micro {
+	display: block;
+	margin: auto;
+}
+
+.bullets_projets {
+	display: block;
+	margin: auto;
+	width: 220px;
+    box-shadow: -5px 5px 5px 0px black;
+    border-radius: 5px;
+    border: 2px solid hotpink;
+    padding: 10px 10px;
+}
+
+.bullets_projets ul {
+    list-style: circle inside;
+    padding-left: 14px;
+}
+
+
+.mentions_legales {
+	position: fixed;
+	bottom: 20px;
+	right: 15px;
+	font-size: 0.9em;
+}
+
+.reseaux_sociaux {
+	position: fixed;
+	bottom: 20px;
+	left: 15px;
+}
+
+.reseaux_sociaux a {
+  margin: 0 16px 0 0;
+}
+
+
+.reseaux_sociaux a:hover {
+    color: hotpink;
+    filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+}
+
+.reseaux_sociaux img {
+	width: 24px;
+}
