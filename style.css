@@ -88,6 +88,8 @@ nav a {
 	font-size: 1em;
 }
 
+
+
 .contact {
 	color: #ff0381;
 }
@@ -107,7 +109,7 @@ nav a {
 }
 
 .logo_accueil {
-	width: 35%;
+	width: 10%;
 }
 
 
@@ -117,25 +119,45 @@ nav a {
  	padding-top: 120px;
   	display: flex;
   	flex-direction: column;
+    justify-content: center;
   	padding-bottom: 70px;
   }
 
 
-.section_centre .neon {
+ .neon {
     font-family: 'gotham_lightregular', cursive;
-    font-size:28px;
-    color: hotpink;
+    font-size:24px;
     font-weight: 400;
-    letter-spacing: 8px;
-    text-shadow: 1px 0px 4px hotpink, 2px 0px 4px hotpink, 3px 0px 4px hotpink, 2px 0px 3px #D42CCA, 2px 3px 15px #D42CCA, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA,40px 0vw 200px #D42CCA;
+    letter-spacing: 4px;
+    color: lightgray;/*
+    
+    text-shadow: 1px 0px 4px hotpink, 2px 0px 4px hotpink, 3px 0px 4px hotpink, 2px 0px 3px #D42CCA, 2px 3px 15px #D42CCA, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA,40px 0vw 200px #D42CCA;*/
+    text-align: center;
+    
+  }
+
+  .arrivee {
+    animation: 1s anim-arrive;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+    /*visibility: hidden;*/
+    opacity: 0;
   }
   
+@keyframes anim-arrive {
+
+    100% {
+        /*visibility: visible;*/
+        opacity: 1;
+    }
+}
+
   .flicker-slow{
-    animation: flicker 3s linear infinite;
+    /*animation: flicker 3s linear infinite;*/
   }
   
   .flicker-fast{
-    animation: flicker 1s linear infinite;
+    /*animation: flicker 1s linear infinite;*/
   }
 
   @keyframes flicker {
@@ -148,8 +170,28 @@ nav a {
       }
   }
 
-.section_centre .logo_central {
-	width: 30vh;
+ #logo_central {
+	height: 50vh;
+}
+
+
+@keyframes fadeIn {
+  30%,40%, 55%, 70%, 80% {
+    opacity: 0.1;
+  }
+  35%, 50%, 60%, 75% {
+   opacity: 0.5;
+  }
+
+  90% {
+   opacity: 1;
+   height: 70vh;
+  }
+
+  100% {
+   opacity: 1; 
+   height: 50vh;
+  }
 }
 
 .section_centre .photo_micro {
@@ -192,10 +234,14 @@ nav a {
 
 
 .reseaux_sociaux a:hover {
-    color: hotpink;
-    filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+    /*color: hotpink;*/
+    filter: invert(48%) sepia(84%) saturate(7189%) hue-rotate(311deg) brightness(101%) contrast(99%);
 }
 
 .reseaux_sociaux img {
 	width: 24px;
+}
+
+.logo_accueil:hover {
+    filter: invert(48%) sepia(84%) saturate(7189%) hue-rotate(311deg) brightness(101%) contrast(99%);
 }
