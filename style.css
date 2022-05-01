@@ -124,74 +124,34 @@ nav a {
   }
 
 
- .neon {
+ h1 {
     font-family: 'gotham_lightregular', cursive;
     font-size:24px;
     font-weight: 400;
     letter-spacing: 4px;
-    color: lightgray;/*
-    
-    text-shadow: 1px 0px 4px hotpink, 2px 0px 4px hotpink, 3px 0px 4px hotpink, 2px 0px 3px #D42CCA, 2px 3px 15px #D42CCA, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA,40px 0vw 200px #D42CCA;*/
+    color: lightgray;
     text-align: center;
-    
   }
 
   .arrivee {
     animation: 1s anim-arrive;
     animation-delay: 3.5s;
     animation-fill-mode: forwards;
-    /*visibility: hidden;*/
     opacity: 0;
   }
   
-@keyframes anim-arrive {
-
-    100% {
-        /*visibility: visible;*/
-        opacity: 1;
-    }
-}
-
-  .flicker-slow{
-    /*animation: flicker 3s linear infinite;*/
-  }
-  
-  .flicker-fast{
-    /*animation: flicker 1s linear infinite;*/
-  }
-
-  @keyframes flicker {
-      0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
-      opacity: .99;
-      }
-  
-      20%, 21.999%, 63%, 63.999%, 65%, 69.999% {  
-          opacity: 0.4;
-      }
-  }
-
  #logo_central {
 	height: 50vh;
-}
-
-
-@keyframes fadeIn {
-  30%,40%, 55%, 70%, 80% {
+    animation: 1s anim-arrive;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
     opacity: 0.1;
-  }
-  35%, 50%, 60%, 75% {
-   opacity: 0.5;
-  }
+    }
 
-  90% {
-   opacity: 1;
-   height: 70vh;
-  }
-
-  100% {
-   opacity: 1; 
-   height: 50vh;
-  }
+@keyframes anim-arrive {
+    100% {
+        opacity: 1;
+    }
 }
 
 .section_centre .photo_micro {
