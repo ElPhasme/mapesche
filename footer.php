@@ -9,7 +9,7 @@ echo '
 </div>
 
 <div class="mentions_legales arrivee">
-	<a href="mentionslegales.html">
+	<a href="mentionslegales.php">
         mapesche &#169;  2022</a>
 </div>
 </footer>

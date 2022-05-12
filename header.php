@@ -18,14 +18,14 @@ echo '
 <body>
 
 <header class="img_accueil arrivee">
-<a href="index.html"><img class="logo_accueil" src="images/logo_white.svg" alt="petit logo mapesche voix off"></a>
+<a href="index.php"><img class="logo_accueil" src="images/logo_white.svg" alt="petit logo mapesche voix off"></a>
 </header>
 
 <nav class="arrivee">
     <ul>
-        <li><a href="voix.html">VOIX</a></li>
-        <li><a href="studio.html">STUDIO</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="voix.php">VOIX</a></li>
+        <li><a href="studio.php">STUDIO</a></li>
+        <li><a href="contact.php">CONTACT</a></li>
     </ul>
 </nav>'
 ?>
