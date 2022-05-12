@@ -123,6 +123,20 @@ nav a {
   	padding-bottom: 70px;
   }
 
+.audios_container {
+    width: 75%;
+    margin:auto;
+    border: 0.5rem solid #FFD5FF;
+    border-radius: 50px;
+    box-shadow: 
+      0 0 0.1vw 0.4vw #FFD5FF,
+      0 0 0.4vw 0.6vw #C97272,
+      0 0   4vw 0.8vw #D42CCA,
+    
+      inset 0 0 3.5vw 0.8vw #D42CCA,
+      inset 0 0 0.4vw 0.2vw #C97272,
+      inset 0 0 0.5vw 0.2vw #FFD5FF;
+}
 
  h1 {
     font-family: 'gotham_lightregular', cursive;
