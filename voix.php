@@ -1,38 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>mapesche</title>
-	<link rel="icon" type="image/png" href="images/logo_bright_yellow_mini.png">
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-
-
-
-<!--- Contenu du site -->
-<body>
-
-
-<header class="img_accueil">
-<a href="index.html"><img class="logo_accueil" src="images/logo_petit.png" alt="petit logo mapesche voix off"></a>
-</header>
-
-<nav class="menu">
-              <ul>
-                <li><a class="voix" href="voix.html">VOIX</a></li>
-                <li><a href="studio.html">STUDIO</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-              </ul>
-</nav>
-
+<?php
+include("header.php");
+?>
 
 <div class="section_centre">
-
 	
 <h1>Jukebox Voix Off</h1>
-
-	
 
 <div id="audios_container">
 	<h2>Audio</h2>
@@ -52,18 +24,6 @@
 </div>
 </div>
 
-<div class="reseaux_sociaux">
-	<a href="https://soundcloud.com/mapesche"><img src="images/soundcloud1.svg" alt="Soundcloud"></a>
-	<a href="https://fr.linkedin.com/in/mariellepeschet"><img src="images/linkedin.svg" alt="LinkedIn"></a>
-	<a href="https://www.youtube.com/watch?v=rB-owgXag4I" ><img src="images/instagram.svg" alt="Instagram">
-	</a>
-</div>
-
-<footer class="mentions_legales">
-	<a href="mentionslegales.html">
-        mapesche &#169;  2022</a>
-</footer>
-
-
-</body>
-</html>
+<?php
+include("footer.php");
+?>
