@@ -1,4 +1,5 @@
-
+<?php
+echo '
 <footer>
 <div class="reseaux_sociaux arrivee">
 	<a href="https://soundcloud.com/mapesche"><img src="images/soundcloud1.svg" alt="Soundcloud"></a>
@@ -14,4 +15,5 @@
 </footer>
 
 </body>
-</html>
+</html>';
+?>
